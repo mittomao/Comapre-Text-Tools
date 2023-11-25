@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Comapre Text Tools</h1>
+        <div class="textCompareForm">
+            <table>
+                <tbody>
+                    <tr>
+                        <td width="48%" class="extraOptionsLeft">
+                            <button type="button" class="btn btn-primary" id="switchButton">Switch
+                                texts</button>
+                        </td>
+                        <td width="4%"><button class="compareButton btn btn-success" id="compareButton">
+                                <div class="compareButtonText">Compare!</div>
+                                <div id="compareButtonSpinner" style="display:none" class="lds-dual-ring"></div>
+                            </button></td>
+                        <td width="48%" class="extraOptionsRight text-right"><button type="button"
+                                class="btn btn-primary clearButton btn-right" id="clearAll">Clear all</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col col-6">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <textarea name="text1" rows="15" class="inputText" id="inputText1"
+                            placeholder="Original Text"></textarea>
+                    </div>
+                </div>
+                <div class="col col-6">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <textarea name="text2" rows="15" class="inputText" id="inputText2"
+                            placeholder="Modify Text"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center my-3">Result</h1>
+    <section id="container" class="container-result"></section>
+    <!-- <section class="actions">
+        <label>Inline</label>
+        <input type="checkbox" class="inline-it">
+    </section> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.10.1/min/vs/loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
